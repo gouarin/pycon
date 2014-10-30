@@ -1714,12 +1714,169 @@ div.output_prompt {
 
 </head>
 
-
-
 <body>
 <div class="reveal">
 <div class="slides">
-<section>
+<div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">css_file</span> <span class="o">=</span> <span class="s">&#39;./custom.css&#39;</span>
+<span class="n">HTML</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">css_file</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[1]:</div>
+
+<div class="output_html rendered_html output_subarea output_pyout">
+body {
+    font-size: 120%;
+    overflow:hidden;
+}
+
+.rendered_html{
+ font-family:serif;
+ line-height:1.5em;
+ padding-top:7px;
+}
+
+div.highlight#pre {
+    font-size: 20pt;
+}
+
+div.prompt { /* remove In/Out prompt */
+    display: none;
+}
+ 
+div.cell.code_cell { /* area that contains code + output */
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding-top: 1ex;
+}
+.reveal strong {
+    color: blue;
+}
+
+.reveal h1 {
+text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reveal h2 {
+text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reveal h3 {
+text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* header colours and fonts */
+.rendered_html h1 { color: #444; font-style: bold; font-weight: normal; text-align: center; }
+.rendered_html h2 { color: #443; font-style: italic; font-weight: normal; text-align: center; }
+.rendered_html h3 { color: #444; font-style: italic; font-weight: normal}
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[2]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%</span><span class="k">load</span> <span class="s">&#39;custom.css&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">body</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">120</span><span class="o">%</span><span class="p">;</span>
+    <span class="n">overflow</span><span class="p">:</span><span class="n">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">rendered_html</span><span class="p">{</span>
+ <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span><span class="n">serif</span><span class="p">;</span>
+ <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="p">:</span><span class="mf">1.5</span><span class="n">em</span><span class="p">;</span>
+ <span class="n">padding</span><span class="o">-</span><span class="n">top</span><span class="p">:</span><span class="mi">7</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">div</span><span class="o">.</span><span class="n">highlight</span><span class="c">#pre {</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">20</span><span class="n">pt</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">div</span><span class="o">.</span><span class="n">prompt</span> <span class="p">{</span> <span class="o">/*</span> <span class="n">remove</span> <span class="n">In</span><span class="o">/</span><span class="n">Out</span> <span class="n">prompt</span> <span class="o">*/</span>
+    <span class="n">display</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+<span class="p">}</span>
+ 
+<span class="n">div</span><span class="o">.</span><span class="n">cell</span><span class="o">.</span><span class="n">code_cell</span> <span class="p">{</span> <span class="o">/*</span> <span class="n">area</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">code</span> <span class="o">+</span> <span class="n">output</span> <span class="o">*/</span>
+    <span class="n">background</span><span class="p">:</span> <span class="c">#fff;</span>
+    <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+    <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+    <span class="n">padding</span><span class="o">-</span><span class="n">top</span><span class="p">:</span> <span class="mi">1</span><span class="n">ex</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">.</span><span class="n">reveal</span> <span class="n">strong</span> <span class="p">{</span>
+    <span class="n">color</span><span class="p">:</span> <span class="n">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">reveal</span> <span class="n">h1</span> <span class="p">{</span>
+<span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">10</span><span class="n">px</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">reveal</span> <span class="n">h2</span> <span class="p">{</span>
+<span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">10</span><span class="n">px</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">reveal</span> <span class="n">h3</span> <span class="p">{</span>
+<span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">0</span><span class="n">px</span> <span class="mi">0</span><span class="n">px</span> <span class="mi">6</span><span class="n">px</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">header</span> <span class="n">colours</span> <span class="ow">and</span> <span class="n">fonts</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">rendered_html</span> <span class="n">h1</span> <span class="p">{</span> <span class="n">color</span><span class="p">:</span> <span class="c">#444; font-style: bold; font-weight: normal; text-align: center; }</span>
+<span class="o">.</span><span class="n">rendered_html</span> <span class="n">h2</span> <span class="p">{</span> <span class="n">color</span><span class="p">:</span> <span class="c">#443; font-style: italic; font-weight: normal; text-align: center; }</span>
+<span class="o">.</span><span class="n">rendered_html</span> <span class="n">h3</span> <span class="p">{</span> <span class="n">color</span><span class="p">:</span> <span class="c">#444; font-style: italic; font-weight: normal}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
     <section>
     
 <div class="cell border-box-sizing text_cell rendered">
@@ -2478,8 +2635,7 @@ In&nbsp;[]:
 <h1 id="questions-">Questions ?</h1>
 </div>
 </div>
-</div></section>
-    </section>
+</div>
 </div>
 </div>
 
@@ -2538,63 +2694,5 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 </script>
 
 </body>
-
-
-<script>
-
-Reveal.initialize({
-
-    //slideNumber: true,
-    // Display controls in the bottom right corner
-    //controls: true,
-
-    // Display a presentation progress bar
-    //progress: true,
-
-    // Push each slide change to the browser history
-    //history: false,
-
-    // Enable keyboard shortcuts for navigation
-    //keyboard: true,
-
-    // Enable touch events for navigation
-    //touch: true,
-
-    // Enable the slide overview mode
-    //overview: true,
-
-    // Vertical centering of slides
-    center: true,
-
-    // Loop the presentation
-    //loop: false,
-
-    // Change the presentation direction to be RTL
-    //rtl: false,
-
-    // Number of milliseconds between automatically proceeding to the
-    // next slide, disabled when set to 0, this value can be overwritten
-    // by using a data-autoslide attribute on your slides
-    //autoSlide: 0,
-
-    // Enable slide navigation via mouse wheel
-    //mouseWheel: false,
-
-    // Transition style
-    transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-    // Transition speed
-    transitionSpeed: 'fast', // default/fast/slow
-
-    // Transition style for full page backgrounds
-    //backgroundTransition: 'default', // default/linear/none
-
-    // Theme
-    theme: 'serif' // available themes are in /css/theme default/sky/beige/simple/serif/night/moon/solarized
-
-});
-
-</script>
-
 
 </html>
